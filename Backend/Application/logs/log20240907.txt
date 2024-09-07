@@ -1,0 +1,136 @@
+2024-09-07 16:18:30 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/index.html - -
+2024-09-07 16:18:32 [Information] Application started. Press Ctrl+C to shut down.
+2024-09-07 16:18:32 [Information] Hosting environment: "Development"
+2024-09-07 16:18:32 [Information] Content root path: "C:\MedfarCodingTest\KonstantinKnyazev-main\Backend\Application\"
+2024-09-07 16:18:34 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/index.html - - - 200 - text/html;charset=utf-8 4078.5679ms
+2024-09-07 16:18:35 [Information] Request starting HTTP/2 GET https://localhost:44374/_vs/browserLink - -
+2024-09-07 16:18:35 [Information] Request starting HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - -
+2024-09-07 16:18:35 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/swagger-ui.css - -
+2024-09-07 16:18:35 [Information] Request finished HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - - - 200 13758 application/javascript;+charset=utf-8 29.4402ms
+2024-09-07 16:18:35 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2024-09-07 16:18:35 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/swagger-ui.css - - - 0 143632 text/css 147.6884ms
+2024-09-07 16:18:35 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/favicon-32x32.png - -
+2024-09-07 16:18:35 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2024-09-07 16:18:35 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/favicon-32x32.png - - - 0 628 image/png 7.7104ms
+2024-09-07 16:18:35 [Information] Request finished HTTP/2 GET https://localhost:44374/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 630.6856ms
+2024-09-07 16:18:35 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - -
+2024-09-07 16:18:37 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1191.8131ms
+2024-09-07 16:18:58 [Information] Request starting HTTP/1.1 GET https://localhost:44374/User/GetUsersXXX - -
+2024-09-07 16:18:58 [Information] Executing endpoint '"Core.Controllers.UserController.Getxxx (Application)"'
+2024-09-07 16:18:59 [Information] Route matched with "{action = \"Getxxx\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Getxxx()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:18:59 [Information] Executed action "Core.Controllers.UserController.Getxxx (Application)" in 22.5287ms
+2024-09-07 16:18:59 [Information] Executed endpoint '"Core.Controllers.UserController.Getxxx (Application)"'
+2024-09-07 16:18:59 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Medfar.Interview.DAL.Repositories.UserRepository' while attempting to activate 'Core.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-09-07 16:18:59 [Information] Request finished HTTP/1.1 GET https://localhost:44374/User/GetUsersXXX - - - 500 - text/plain;+charset=utf-8 1451.1680ms
+2024-09-07 16:19:29 [Information] Request starting HTTP/1.1 GET https://localhost:44374/User/GetUsersXXX - -
+2024-09-07 16:19:29 [Information] Executing endpoint '"Core.Controllers.UserController.Getxxx (Application)"'
+2024-09-07 16:19:29 [Information] Route matched with "{action = \"Getxxx\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Getxxx()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:19:29 [Information] Executed action "Core.Controllers.UserController.Getxxx (Application)" in 7.3726ms
+2024-09-07 16:19:29 [Information] Executed endpoint '"Core.Controllers.UserController.Getxxx (Application)"'
+2024-09-07 16:19:29 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Medfar.Interview.DAL.Repositories.UserRepository' while attempting to activate 'Core.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-09-07 16:19:29 [Information] Request finished HTTP/1.1 GET https://localhost:44374/User/GetUsersXXX - - - 500 - text/plain;+charset=utf-8 53.1566ms
+2024-09-07 16:20:20 [Information] Request starting HTTP/2 GET https://localhost:44374/User/GetUsers - -
+2024-09-07 16:20:20 [Information] Executing endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:20:20 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Get()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:20:20 [Information] Executed action "Core.Controllers.UserController.Get (Application)" in 3.5633ms
+2024-09-07 16:20:20 [Information] Executed endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:20:20 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Medfar.Interview.DAL.Repositories.UserRepository' while attempting to activate 'Core.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method5(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-09-07 16:20:20 [Information] Request finished HTTP/2 GET https://localhost:44374/User/GetUsers - - - 500 - text/plain;+charset=utf-8 38.4385ms
+2024-09-07 16:23:57 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/index.html - -
+2024-09-07 16:23:59 [Information] Application started. Press Ctrl+C to shut down.
+2024-09-07 16:23:59 [Information] Hosting environment: "Development"
+2024-09-07 16:23:59 [Information] Content root path: "C:\MedfarCodingTest\KonstantinKnyazev-main\Backend\Application\"
+2024-09-07 16:24:00 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/index.html - - - 200 - text/html;charset=utf-8 2839.8712ms
+2024-09-07 16:24:01 [Information] Request starting HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - -
+2024-09-07 16:24:01 [Information] Request starting HTTP/2 GET https://localhost:44374/_vs/browserLink - -
+2024-09-07 16:24:01 [Information] Request finished HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - - - 200 13758 application/javascript;+charset=utf-8 43.6462ms
+2024-09-07 16:24:01 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/swagger-ui.css - -
+2024-09-07 16:24:01 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2024-09-07 16:24:01 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/swagger-ui.css - - - 0 143632 text/css 435.1761ms
+2024-09-07 16:24:02 [Information] Request finished HTTP/2 GET https://localhost:44374/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 973.7063ms
+2024-09-07 16:24:02 [Information] Request starting HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - -
+2024-09-07 16:24:03 [Information] Request finished HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1626.0382ms
+2024-09-07 16:24:10 [Information] Request starting HTTP/2 GET https://localhost:44374/User/GetUsers - -
+2024-09-07 16:24:10 [Information] Executing endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:24:10 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Get()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:24:11 [Information] Fetching all users.
+2024-09-07 16:24:12 [Information] Successfully fetched 23 users.
+2024-09-07 16:24:12 [Information] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[Medfar.Interview.Types.User, Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-07 16:24:12 [Information] Executed action "Core.Controllers.UserController.Get (Application)" in 1642.3155ms
+2024-09-07 16:24:12 [Information] Executed endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:24:12 [Information] Request finished HTTP/2 GET https://localhost:44374/User/GetUsers - - - 200 - application/json;+charset=utf-8 2012.9406ms
+2024-09-07 16:24:23 [Information] Request starting HTTP/1.1 GET https://localhost:44374/User/GetUsersXXX - -
+2024-09-07 16:24:23 [Information] Executing endpoint '"Core.Controllers.UserController.Getxxx (Application)"'
+2024-09-07 16:24:23 [Information] Route matched with "{action = \"Getxxx\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Getxxx()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:24:27 [Information] Fetching all users.
+2024-09-07 16:24:27 [Information] Successfully fetched 23 users.
+2024-09-07 16:24:27 [Information] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[Medfar.Interview.Types.User, Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-07 16:24:27 [Information] Executed action "Core.Controllers.UserController.Getxxx (Application)" in 3844.3531ms
+2024-09-07 16:24:27 [Information] Executed endpoint '"Core.Controllers.UserController.Getxxx (Application)"'
+2024-09-07 16:24:27 [Information] Request finished HTTP/1.1 GET https://localhost:44374/User/GetUsersXXX - - - 200 - application/json;+charset=utf-8 3899.1299ms
+2024-09-07 16:31:18 [Information] Request starting HTTP/1.1 GET https://localhost:44374/User/GetUsers - -
+2024-09-07 16:31:18 [Information] Executing endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:31:18 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Get()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:31:18 [Information] Fetching all users.
+2024-09-07 16:31:18 [Information] Successfully fetched 23 users.
+2024-09-07 16:31:18 [Information] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[Medfar.Interview.Types.User, Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-07 16:31:18 [Information] Executed action "Core.Controllers.UserController.Get (Application)" in 29.8551ms
+2024-09-07 16:31:18 [Information] Executed endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:31:18 [Information] Request finished HTTP/1.1 GET https://localhost:44374/User/GetUsers - - - 200 - application/json;+charset=utf-8 36.6704ms
+2024-09-07 16:31:37 [Information] Request starting HTTP/1.1 GET https://localhost:44374/User/GetUsers - -
+2024-09-07 16:31:37 [Information] Executing endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:31:37 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Medfar.Interview.Types.User] Get()" on controller "Core.Controllers.UserController" ("Application").
+2024-09-07 16:31:37 [Information] Fetching all users.
+2024-09-07 16:31:37 [Information] Successfully fetched 23 users.
+2024-09-07 16:31:37 [Information] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[Medfar.Interview.Types.User, Types, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2024-09-07 16:31:37 [Information] Executed action "Core.Controllers.UserController.Get (Application)" in 20.2464ms
+2024-09-07 16:31:37 [Information] Executed endpoint '"Core.Controllers.UserController.Get (Application)"'
+2024-09-07 16:31:37 [Information] Request finished HTTP/1.1 GET https://localhost:44374/User/GetUsers - - - 200 - application/json;+charset=utf-8 22.4743ms
