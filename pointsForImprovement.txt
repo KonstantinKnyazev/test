@@ -1,0 +1,18 @@
+implement EF for data access (I prefer this)
+or 
+stored proc, existed way is not the best
+
+logging (interceptin global exceptions and for each significant action)
+
+implementation of use dependensy injection and data transfering objects to avoid of using full objects (avoid to send not needed information)
+
+using meaningful variable names according to their purpose (ex:not messages for users)
+
+add more annotation
+
+unit tests
+
+in this examle I started but did not have time to implement a method that would return only the required number of filtered lines.
+i belive this is necessary, because with a large number of records that will appear over time.
+there will be a problem with processing a huge piece of data on frontend side.
+
